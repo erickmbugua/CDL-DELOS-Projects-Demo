@@ -19,21 +19,21 @@ $ docker login
 $ minikube tunnel
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.3.1/deploy/static/provider/cloud/deploy.yaml
 ```
-## step 2: Dockerize FastApi app
+## Step 2: Dockerize FastApi app
 1. The Dockerfiles in the FastApi folder specifies how to dockerize the FastApi app
 2. cd into FastApi folder and run:
 ```Console
 $ docker build -t username/fastapi .
 $ docker push username/fastapi
 ```
-## step 2: Deploy the FastApi app as well as Ingress
+## Step 3: Deploy the FastApi app as well as Ingress
 1. In the root folder run
 ```Console
 $ kubectl create namespace fastapi
 $ kubectl apply -n fastapi -f fastapi.yaml
 $ kubectl apply -n fastapi -f fastapi-ingress.yaml
 ```
-## step 3: Ping the url
+## Step 4: Ping the url
 1. In your browser type
 ```Console
 $ http://kubernetes.docker.internal/initiate
@@ -44,6 +44,6 @@ $ http://kubernetes.docker.internal/initiate
 ```Console
 $ kubectl delete ns fastapi
 ```
-## step 5: Install helm chart with prometheus subchart
+## Step 5: Install helm chart with prometheus subchart
 ```console
 $ helm install helm-chart helmchart/ --values helmchart/values.yaml
