@@ -18,7 +18,7 @@ $ docker login
 1. Create a server that listens to a port that will be provided as an environment variable on kubernetes config files.
 2. Create a client that connects to the server's address and port as specificed in the environment variables
 
-## step 2: Dockerize server-client app
+## Step 2: Dockerize server-client app
 1. The Dockerfiles in the Server and Client folders specify how to dockerize both the server and client
 2. cd into Server folder and run:
 ```Console
@@ -30,7 +30,7 @@ $ docker push username/server
 $ docker build . -t username/client
 $ docker push username/client
 ```
-## step 3: Create k8s deployments and services for the server and client
+## Step 3: Create k8s deployments and services for the server and client
 1. Deploy the server and client in different pods and create a service for each so that they can communicate
 ```Console
 $ kubectl create namespace server-client
@@ -46,7 +46,7 @@ $ kubectl logs -n server-client -f -l app=server
 $ kubectl logs -n server-client -f -l app=client
 ```
 
-## step 4: Delete Resources
+## Step 4: Delete Resources
 1. Run
 ```console
 $ kubectl delete ns server-client
@@ -57,4 +57,9 @@ For the configmap file with the average time between sending two messages betwee
 $ kubectl apply -n server-client -f average-time.yaml
 ```
 
-### [DEMO Link](https://youtu.be/3ynlfoO7U-A)
+## DEMO
+
+https://user-images.githubusercontent.com/23630122/193200457-651e0b3a-db27-4f88-84f1-a24a86638ef3.mp4
+
+
+
