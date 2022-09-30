@@ -23,7 +23,7 @@ $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/co
 1. The Dockerfiles in the FastApi folder specifies how to dockerize the FastApi app
 2. cd into FastApi folder and run:
 ```Console
-$ docker build . -t username/fastapi
+$ docker build -t username/fastapi .
 $ docker push username/fastapi
 ```
 ## step 2: Deploy the FastApi app as well as Ingress

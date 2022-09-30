@@ -22,7 +22,7 @@ $ docker login
 1. The Dockerfiles in the Server and Client folders specify how to dockerize both the server and client
 2. cd into Server folder and run:
 ```Console
-$ docker build . -t username/server
+$ docker build -t username/server .
 $ docker push username/server
 ```
 3. cd into Client folder and run:

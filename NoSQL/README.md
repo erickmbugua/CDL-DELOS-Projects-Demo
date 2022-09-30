@@ -22,7 +22,7 @@ $ docker login
 1. The Dockerfiles in the MongoClient folder specifies how to dockerize both the mongoclient app
 2. cd into Server folder and run:
 ```Console
-$ docker build . -t username/mongo-client
+$ docker build -t username/mongo-client .
 $ docker push username/mongo-client
 ```
 ## step 2: Deploy mongodb
