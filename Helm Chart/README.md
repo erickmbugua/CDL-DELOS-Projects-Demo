@@ -49,6 +49,8 @@ $ kubectl delete ns fastapi
 $ helm install helm-chart helmchart/ --values helmchart/values.yaml
 ```
 
+## DEMO
+
 https://user-images.githubusercontent.com/23630122/193200842-25b0ba14-5e1c-4840-a2e6-4ac7df85da8a.mp4
 
 
