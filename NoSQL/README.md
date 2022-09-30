@@ -25,7 +25,7 @@ $ docker login
 $ docker build -t username/mongo-client .
 $ docker push username/mongo-client
 ```
-## step 2: Deploy mongodb
+## Step 2: Deploy mongodb
 1. In the root folder run
 ```Console
 $ kubectl create namespace mongodb
@@ -35,16 +35,23 @@ $ kubectl apply -n mongodb -f mongo.yaml
 $ kubectl apply -n mongodb -f mongo-service.yaml
 ```
 
-## step 3: Deploy the mongo-client
+## Step 3: Deploy the mongo-client
 1. In the root folder run
 ```Console
 $ kubectl apply -n mongodb -f mongo-client.yaml
 $ kubectl apply -n mongodb -f mongo-client-service.yaml
 ```
 
-## step 4: Check that the client successfully inserts record into the collection
+## Step 4: Check that the client successfully inserts record into the collection
 ```Console
 $ kubectl logs -n mongodb -f -l app=mongo-client
 ```
 ## Step 5: Clean up
 $ kubectl delete ns mongodb
+
+
+## DEMO
+
+https://user-images.githubusercontent.com/23630122/193201479-089758c1-0007-4897-a4a6-4f5a531821cc.mp4
+
+
