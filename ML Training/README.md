@@ -29,3 +29,9 @@ My development laptop is the M1 Macbook Pro which posed alot of issues with down
 The only workaround was using miniforge to download tensorflow and thereby using a conda virtual environment.
 However, there is no way to include the conda environment in this folder
 
+## DEMO
+
+
+https://user-images.githubusercontent.com/23630122/193203300-5060c17e-0d5a-46d7-bf60-b2089c2ea7e4.mp4
+
+
