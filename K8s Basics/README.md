@@ -59,7 +59,9 @@ $ kubectl apply -n server-client -f average-time.yaml
 
 ## DEMO
 
-https://user-images.githubusercontent.com/23630122/193200457-651e0b3a-db27-4f88-84f1-a24a86638ef3.mp4
+
+https://user-images.githubusercontent.com/23630122/193200567-587849ad-3ad5-4150-a11d-60635f06bb0d.mp4
+
 
 
 
