@@ -2,6 +2,7 @@ import socket
 import os
 
 def client():
+    #get the server address and port
     SRV = os.getenv('SERVER_ADDRESS')
     PORT = int(os.getenv('SERVER_PORT'))
 

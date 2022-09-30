@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: average-time
 data:
-  server-average-time: 4.8
-  client-average-time: 4.7
+  server-average-time: "4.8"
+  client-average-time: "4.7"
